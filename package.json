@@ -1,0 +1,23 @@
+{
+  "name": "adityablog",
+  "version": "1.0.0",
+  "description": "This is my blo-g",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Aditya Bhardwaj",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "express-edge": "^2.0.2",
+    "express-fileupload": "^1.2.1",
+    "mongoose": "^6.1.7",
+    "nodemon": "^2.0.15",
+    "startbootstrap-clean-blog": "^6.0.7"
+  }
+}
