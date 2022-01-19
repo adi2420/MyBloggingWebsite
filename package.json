@@ -11,6 +11,9 @@
   ],
   "author": "Aditya Bhardwaj",
   "license": "ISC",
+  "engines": {
+    "node": "14.17.3"
+  },
   "dependencies": {
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.1",

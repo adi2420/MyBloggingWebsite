@@ -55,7 +55,7 @@ app.use('*', (req, res, next) => {
     next()
 });
 
-mongoose.connect('mongodb://localhost:27017/node-blog', { useNewUrlParser: true })
+mongoose.connect('mongodb+srv://admin:admin@cluster0.kt47e.mongodb.net/node-blog', { useNewUrlParser: true })
     .then(() => 'You are now connected to Mongo!')
     .catch(err => console.error('Something went wrong', err))
 
@@ -127,11 +127,15 @@ app.get("/auth/register", redirectIfAuthenticated,createUserController);
 app.post("/users/register", redirectIfAuthenticated,storeUserController);
 
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 4000;
+}
 
 
 
-app.listen(4000, () => {
-    console.log('App listening on port 4000')
+app.listen(port, () => {
+    console.log('App has started');
 }); 
  
  
